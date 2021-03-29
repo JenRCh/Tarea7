@@ -12,9 +12,11 @@
 		638ED70F260FA729009A4F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638ED70E260FA729009A4F2A /* Assets.xcassets */; };
 		638ED712260FA729009A4F2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638ED711260FA729009A4F2A /* Preview Assets.xcassets */; };
 		638ED71B260FB6FB009A4F2A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ED71A260FB6FB009A4F2A /* LoginView.swift */; };
+		65A3C1EBEE98F49087D6946E /* Pods_loginOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E515922B9A0D3E19C62D67 /* Pods_loginOTP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24DEFEFA0E7A4ED3C87C9EA1 /* Pods-loginOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginOTP.release.xcconfig"; path = "Target Support Files/Pods-loginOTP/Pods-loginOTP.release.xcconfig"; sourceTree = "<group>"; };
 		638ED707260FA727009A4F2A /* loginOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638ED70A260FA728009A4F2A /* loginOTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginOTPApp.swift; sourceTree = "<group>"; };
 		638ED70C260FA728009A4F2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		638ED711260FA729009A4F2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		638ED713260FA729009A4F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638ED71A260FB6FB009A4F2A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		86E515922B9A0D3E19C62D67 /* Pods_loginOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C867C2BE192238FCEE44D70D /* Pods-loginOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginOTP.debug.xcconfig"; path = "Target Support Files/Pods-loginOTP/Pods-loginOTP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A3C1EBEE98F49087D6946E /* Pods_loginOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5B249939C2F781E18886C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86E515922B9A0D3E19C62D67 /* Pods_loginOTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		638ED6FE260FA727009A4F2A = {
 			isa = PBXGroup;
 			children = (
 				638ED709260FA727009A4F2A /* loginOTP */,
 				638ED708260FA727009A4F2A /* Products */,
+				7B47058310B5A929983D89CA /* Pods */,
+				0D5B249939C2F781E18886C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +87,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7B47058310B5A929983D89CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C867C2BE192238FCEE44D70D /* Pods-loginOTP.debug.xcconfig */,
+				24DEFEFA0E7A4ED3C87C9EA1 /* Pods-loginOTP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 638ED716260FA729009A4F2A /* Build configuration list for PBXNativeTarget "loginOTP" */;
 			buildPhases = (
+				64BBF6B59ED6A4774F26335C /* [CP] Check Pods Manifest.lock */,
 				638ED703260FA727009A4F2A /* Sources */,
 				638ED704260FA727009A4F2A /* Frameworks */,
 				638ED705260FA727009A4F2A /* Resources */,
+				D778A2D2A7112ACB6464097C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64BBF6B59ED6A4774F26335C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loginOTP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D778A2D2A7112ACB6464097C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginOTP/Pods-loginOTP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginOTP/Pods-loginOTP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginOTP/Pods-loginOTP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		638ED703260FA727009A4F2A /* Sources */ = {
@@ -268,6 +337,7 @@
 		};
 		638ED717260FA729009A4F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C867C2BE192238FCEE44D70D /* Pods-loginOTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +359,7 @@
 		};
 		638ED718260FA729009A4F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DEFEFA0E7A4ED3C87C9EA1 /* Pods-loginOTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
